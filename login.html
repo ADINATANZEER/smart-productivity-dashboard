@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Productivity | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="auth-container">
+
+        <div class="auth-brand">
+            <div class="brand-icon">✓</div>
+            <h1>Smart Productivity</h1>
+            <p>Organize your tasks. Stay productive.</p>
+        </div>
+
+        <div class="auth-box">
+
+            <div class="auth-tabs">
+                <button id="loginTab" class="active">Login</button>
+                <button id="signupTab">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <h2>Welcome Back 👋</h2>
+                <p class="form-description">
+                    Login to access your productivity dashboard.
+                </p>
+
+                <label>Email</label>
+                <input 
+                    type="email" 
+                    id="loginEmail" 
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label>Password</label>
+                <input 
+                    type="password" 
+                    id="loginPassword" 
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit" class="auth-button">
+                    Login
+                </button>
+
+                <p id="loginMessage" class="message"></p>
+
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="hidden">
+
+                <h2>Create Account 🚀</h2>
+                <p class="form-description">
+                    Start organizing your productivity today.
+                </p>
+
+                <label>Email</label>
+                <input 
+                    type="email" 
+                    id="signupEmail" 
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label>Password</label>
+                <input 
+                    type="password" 
+                    id="signupPassword" 
+                    placeholder="Create a password"
+                    minlength="6"
+                    required
+                >
+
+                <button type="submit" class="auth-button">
+                    Create Account
+                </button>
+
+                <p id="signupMessage" class="message"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
